@@ -3,7 +3,7 @@ import {useState, useEffect} from 'react';
 import classes from './Skills.module.css';
 import useHttp from '../../hooks/use-http';
 import SkillsItem from './SkillsItem';
-import Card from '../UI/Card';
+import Card from '../../UI/Card';
 
 const Skills = () => {
     const [skills, setSkills] = useState([]);
