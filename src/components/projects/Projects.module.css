@@ -1,0 +1,40 @@
+.projects{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #F5EFEF;
+    padding: 3rem 0
+}
+
+.projects img{
+    width: 300px;
+    border-radius: 5px;
+    max-width: 350px;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin-top: 2rem;
+}
+
+.projects a{
+    color: #fff;
+    background-color: #D0021B;
+    border: 1px solid #F5EFEF;
+    padding: 5px;
+    border-radius: 7px;
+    text-decoration: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+a:hover,
+img:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+
+.projects h3{
+    color: #000
+}
+
+.projects h2 P{
+    text-align: center;
+    color: #000;
+}

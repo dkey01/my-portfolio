@@ -1,0 +1,14 @@
+.footer{
+    text-align: center;
+    color: #fff;
+}
+
+.links{
+    display: flex;
+    justify-content: center;
+}
+
+.links img{
+    max-width: 50px;
+    height: auto;
+}

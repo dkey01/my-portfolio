@@ -1,0 +1,13 @@
+.skills{
+    padding: 0 10rem 5rem 10rem;
+}
+
+h2{
+    text-align: center;
+}
+
+.loading,
+.error {
+    text-align: center;
+    color: #fff;
+}
