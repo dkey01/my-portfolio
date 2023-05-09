@@ -26,7 +26,7 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   }
 
-  a:hover {
+  .nav-item a:hover {
     background-color: #D0021B;
     border-color: #D0021B;
     color: white;
