@@ -11,7 +11,9 @@ const Projects = () => {
                             <img src={order} alt='Food order application'/>
                         </a>
                         <h3>Food-order App</h3>
-                        <a href='https://github.com/dkey01/FoodOrder-App.git'>View GitHub code</a>
+                        <div className={classes.gitHub}>
+                            <a href='https://github.com/dkey01/FoodOrder-App.git'>View GitHub code</a>
+                        </div>
                     </div>
     
     const expenseApp = <div>
@@ -19,7 +21,9 @@ const Projects = () => {
                             <img src={expense} alt='Expense application'/>
                         </a>
                         <h3>Expense App</h3>
-                        <a href='https://github.com/dkey01/Expense-App.git'>View GitHub code</a>
+                        <div className={classes.gitHub}>
+                            <a href='https://github.com/dkey01/Expense-App.git'>View GitHub code</a>
+                        </div>
                     </div>
 
     const recipeApp = <div>
@@ -27,7 +31,9 @@ const Projects = () => {
                         <img src={recipe} alt='Meal-recipe application'/>
                     </a>
                     <h3>Meal-recipe App</h3>
-                    <a href='https://github.com/dkey01/My-Meal-App.git'>View GitHub code</a>
+                    <div className={classes.gitHub}>
+                        <a href='https://github.com/dkey01/My-Meal-App.git'>View GitHub code</a>
+                    </div>
                 </div>
 
     const stockApp = <div>
@@ -35,7 +41,9 @@ const Projects = () => {
                         <img src={stock} alt='Stock-Market application'/>
                     </a>
                     <h3>Stock-market App</h3>
-                    <a href='https://github.com/dkey01/Stock-App.git'>View GitHub code</a>
+                    <div className={classes.gitHub}>
+                        <a href='https://github.com/dkey01/Stock-App.git'>View GitHub code</a>
+                    </div>
                 </div>
 
     const teamApp = <div>
@@ -43,7 +51,9 @@ const Projects = () => {
                         <img src={team} alt='Team members application'/>
                     </a>
                     <h3>Team-members App</h3>
-                    <a href='https://github.com/dkey01/TeamSelectionApp.git'>View GitHub code</a>
+                    <div className={classes.gitHub}>
+                        <a href='https://github.com/dkey01/TeamSelectionApp.git'>View GitHub code</a>
+                    </div>
                 </div>
     return <div id='projects' className={classes.projects}>
         <h2>PERSONAL PROJECTS</h2>

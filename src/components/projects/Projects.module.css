@@ -15,26 +15,32 @@
     margin-top: 2rem;
 }
 
-.projects a{
-    color: #fff;
-    background-color: #D0021B;
-    border: 1px solid #000;
-    padding: 5px;
-    border-radius: 7px;
+.gitHub a{
+    color: #D0021B;
+    background-color: transparent;
+    border: 1px solid #D0021B;
+    padding: 0.5rem 2rem;
+    border-radius: 25px;
     text-decoration: none;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.projects a:hover,
-.projects img:hover {
+.gitHub a:hover{
+    color: #fff;
+    background-color: #D0021B;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   }
 
-.projects h3{
-    color: #000
+  ,
+.projects img:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.projects h2 P{
-    text-align: center;
+.projects h3{
+    color: #000;
+}
+
+.projects h2,
+.projects P{
     color: #000;
 }
