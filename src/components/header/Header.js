@@ -1,7 +1,7 @@
 import NavBar from "./NavBar";
 import classes from './header.module.css';
 import profile from '../../assets/profile.jpg';
-import Card from '../UI/Card';
+import Card from '../../UI/Card';
 
 
 const Header = () => {
