@@ -6,3 +6,9 @@
 .experience h2{
     text-align: center;
 }
+
+@media (max-width: 768px) {
+    .experience{
+        margin: 2rem 4rem;
+    }
+   }

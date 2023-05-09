@@ -3,3 +3,9 @@
     text-align: center;
     padding: 10rem;
 }
+
+@media (max-width: 768px){
+    .conclusion{
+        padding: 3rem;
+    }
+}
