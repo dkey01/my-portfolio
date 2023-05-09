@@ -46,6 +46,7 @@
     .navbar {
       display: flex;
       flex-direction: column;
+      position: static;
     }
 
     .navbar h1{
