@@ -32,7 +32,7 @@ const Footer = () => {
     if(contacted){
         content = (
             <div className={classes.contacted}>
-                <p>Your message have been sent, I will get back to you soon. Thank you</p>
+                <p>Your message have been sent</p>
                 <div>
                     <button onClick={showContactForm}>Close</button>
                 </div>
