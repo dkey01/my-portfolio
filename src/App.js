@@ -1,4 +1,6 @@
 import React from 'react';
+
+import NavBar from './components/header/NavBar';
 import Header from './components/header/Header';
 import Experience from './components/experience/Experience';
 import Skills from './components/skills/Skills';
@@ -8,6 +10,7 @@ import Footer from './components/footer/Footer';
 
 function App() {
   return <React.Fragment>
+    <NavBar />
     <Header />
     <main>
       <Experience />
