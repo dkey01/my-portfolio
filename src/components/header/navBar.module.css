@@ -26,7 +26,8 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   }
 
-  .nav-item a:hover {
+  .nav-item a:hover,
+  .nav-item a:active {
     background-color: #D0021B;
     border-color: #D0021B;
     color: white;
@@ -49,7 +50,6 @@
     }
     
     .nav-item {
-      margin-right: 2rem;
       margin-top: 2rem;
       text-align: center;
     }
