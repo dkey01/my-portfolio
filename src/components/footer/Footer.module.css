@@ -52,3 +52,11 @@
     border-color: #D0021B;
     color: white;
 }
+
+@media (max-width: 768px){
+    .footer{
+        text-align: center;
+        padding: 1rem 3rem;
+        margin: 0 auto;
+    }
+}
