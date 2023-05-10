@@ -1,66 +1,118 @@
 .navbar {
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    display: flex;
-    justify-content: space-between;
-    background-color: #F5EFEF;
-    border-bottom: 1px solid #D0021B;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  background-color: #F5EFEF;
+  border-bottom: 1px solid #D0021B;
+}
+
+.navbar-content {
+  display: flex;
+  align-items: center;
+}
+
+.navbar h1 {
+  padding-left: 3.5rem;
+}
+
+.navbar-nav {
+  list-style-type: none;
+  display: flex;
+  padding-top: 0.5rem;
+}
+
+.nav-item {
+  margin-right: 2rem;
+}
+
+.nav-item a {
+  font: inherit;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid #D0021B;
+  padding: 0.5rem 2rem;
+  border-radius: 25px;
+  color: #D0021B;
+  text-decoration: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.nav-item a:hover,
+.nav-item a:active {
+  background-color: #D0021B;
+  border-color: #D0021B;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    align-items: center;
   }
 
-  .navbar h1{
-    padding-left: 3.5rem;
+  .navbar h1 {
+    padding-left: 0;
+    text-align: center;
   }
-  
+
   .navbar-nav {
-    list-style-type: none;
-    display: flex;
-    padding-top: 0.5rem;
+    display: none;
   }
-  
+
   .nav-item {
-    margin-right: 2rem;
+    padding: 2rem 0 0 1rem;
+    text-align: center;
   }
 
   .nav-item a {
-    font: inherit;
-    cursor: pointer;
-    background-color: transparent;
-    border: 1px solid #D0021B;
-    padding: 0.5rem 2rem;
-    border-radius: 25px;
-    color: #D0021B;
-    text-decoration: none;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    background-color: #F5EFEF;
   }
 
-  .nav-item a:hover,
-  .nav-item a:active {
-    background-color: #D0021B;
-    border-color: #D0021B;
-    color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  .menu-btn {
+    display: block;
+    cursor: pointer;
+    margin-top: 1rem;
   }
   
-  @media (max-width: 768px) {
-    .navbar {
-      display: flex;
-      flex-direction: column;
-      position: static;
-    }
-
-    .navbar h1{
-      padding-left: 0;
-      text-align: center;
-    }
-
-    .navbar-nav {
-      flex-direction: column;
-      justify-content: center;
-    }
+  .show-nav {
+    display: flex; 
+    flex-direction: column;
+    animation: fadeInRight 0.5s ease;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    right: 0;
     
-    .nav-item {
-      margin-top: 2rem;
-      text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
     }
+
+    .navbar-nav.show-nav {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .navbar-content ul{
+      height: 13rem;
+      background-color: #fff;
+      border-bottom: 1px solid #D0021B;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+  @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
   }
