@@ -25,6 +25,13 @@ const NavBar = () => {
     setMenuIcon(!menuIcon);
   };
 
+  const handleNavClick = () => {
+    if (isMobile) {
+      setMenuIcon(false);
+      setShowNav(false);
+    }
+  };
+
   return (
     <nav className={classes.navbar}>
       <h1>OGHENEOCHUKO</h1>
@@ -36,13 +43,19 @@ const NavBar = () => {
         )}
         <ul className={`${classes['navbar-nav']} ${showNav ? classes['show-nav'] : ''}`}>
           <li className={classes['nav-item']}>
-            <a href="#projects">Projects</a>
+            <a href="#projects" onClick={handleNavClick}>
+              Projects
+            </a>
           </li>
           <li className={classes['nav-item']}>
-            <a href="#experience">Experience</a>
+            <a href="#experience" onClick={handleNavClick}>
+              Experience
+            </a>
           </li>
           <li className={classes['nav-item']}>
-            <a href="#contact">Contact</a>
+            <a href="#contact" onClick={handleNavClick}>
+              Contact
+            </a>
           </li>
         </ul>
       </div>
