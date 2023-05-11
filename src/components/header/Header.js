@@ -8,7 +8,7 @@ const Header = () => {
     return <header className={classes.header}>
         <div className={classes['profile-content']}>
             <div className={classes['header-profile']}>
-                <img src={profile} alt='Profile_picture'/>
+                <img src={profile} alt='Profile'/>
                 <h3>Ogheneochuko Duvwarovwo</h3>
                 <p>Front-End Developer</p>
             </div>
