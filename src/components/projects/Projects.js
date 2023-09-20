@@ -1,11 +1,22 @@
 import classes from './Projects.module.css';
 import order from '../../assets/order.jpg';
+import nextJsBlog from '../../assets/nextJsBlog.jpg';
 import expense from '../../assets/expense.jpg';
 import recipe from '../../assets/recipe.jpg';
 import stock from '../../assets/stock.jpg';
 import team from '../../assets/team.jpg';
 
 const Projects = () => {
+    const NextJsBlog = <div>
+                        <a href='https://next-js-blog-3v3a.vercel.app'>
+                            <img src={nextJsBlog} alt='NextJS blog application'/>
+                        </a>
+                        <h3>NextJS Blog App</h3>
+                        <div className={classes.gitHub}>
+                            <a href='https://github.com/dkey01/NextJS-Blog'>View GitHub code</a>
+                        </div>
+                    </div>
+
     const foodOrderApp = <div>
                         <a href='https://food-order-app-dkey01.vercel.app/'>
                             <img src={order} alt='Food order application'/>
@@ -58,6 +69,7 @@ const Projects = () => {
     return <div id='projects' className={classes.projects}>
         <h2>PERSONAL PROJECTS</h2>
         <p>Below you can see links to my projects. Click on an image to view</p>
+        {NextJsBlog}
         {foodOrderApp}
         {expenseApp}
         {recipeApp}
