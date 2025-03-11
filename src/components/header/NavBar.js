@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import { FaBars, FaTimes } from 'react-icons/fa';
-import classes from './navBar.module.css';
+import React, { useState, useEffect } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
+import classes from "./navBar.module.css";
 
 const NavBar = () => {
   const [showNav, setShowNav] = useState(false);
@@ -12,11 +12,11 @@ const NavBar = () => {
       setIsMobile(window.innerWidth <= 768);
     };
 
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
     handleResize();
 
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
@@ -34,25 +34,29 @@ const NavBar = () => {
 
   return (
     <nav className={classes.navbar}>
-      <h1>OGHENEOCHUKO</h1>
-      <div className={classes['navbar-content']}>
+      <h1>OGHENEOCHUKO's PORTFOLIO</h1>
+      <div className={classes["navbar-content"]}>
         {isMobile && (
-          <div className={classes['menu-btn']} onClick={toggleNav}>
+          <div className={classes["menu-btn"]} onClick={toggleNav}>
             {menuIcon ? <FaTimes /> : <FaBars />}
           </div>
         )}
-        <ul className={`${classes['navbar-nav']} ${showNav ? classes['show-nav'] : ''}`}>
-          <li className={classes['nav-item']}>
+        <ul
+          className={`${classes["navbar-nav"]} ${
+            showNav ? classes["show-nav"] : ""
+          }`}
+        >
+          <li className={classes["nav-item"]}>
             <a href="#projects" onClick={handleNavClick}>
               Projects
             </a>
           </li>
-          <li className={classes['nav-item']}>
+          <li className={classes["nav-item"]}>
             <a href="#experience" onClick={handleNavClick}>
               Experience
             </a>
           </li>
-          <li className={classes['nav-item']}>
+          <li className={classes["nav-item"]}>
             <a href="#contact" onClick={handleNavClick}>
               Contact
             </a>

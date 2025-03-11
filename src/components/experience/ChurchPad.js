@@ -1,24 +1,47 @@
-import classes from './ChurchPad.module.css';
+import classes from "./ChurchPad.module.css";
 
 const ChurchPad = () => {
+  const churchPad = <h3>ChurchPad, Columbia, MD, United States</h3>;
+  const churchPadDate = <h3>2024 - Present</h3>;
 
-    const churchPad = <h3>ChurchPad, Columbia, MD, United States (Mid-Level, Remote)</h3>
-    const churchPadDate = <h3>2022 - Present</h3>
-
-    const churchPadExperience = <ul>
-        <li>Developed a church management platform technology solution as part of a 5-person team.</li>
-        <li>Working collaboratively with a team of 5 front-end engineers, I led the development of 25 reusable components, resulting in a 35% increase in UI consistency across the application.</li>
-        <li>Successfully implemented 5 new features, including a real-time chat function and a customized dashboard, resulting in a 30% increase in user engagement and a 20% increase in retention rate.</li>
-        <li>Engineered a responsive user interface that improved load time by 40% and reduced bounce rates by 15%.</li>
-        <li>Mentored and coached a team of 6 members, resulting in a 40% increase in overall productivity and a 50% reduction in errors.</li>
+  const churchPadExperience = (
+    <ul>
+      <li>
+        Part of a 15-person team that developed a comprehensive church
+        management platform aimed at streamlining administrative tasks and
+        enhancing the user experience for both church staff and members.
+      </li>
+      <li>
+        Designed and implemented 5 critical features using JavaScript and React,
+        including real-time event scheduling and a personalized member
+        dashboard. These features increased community engagement by 30% and
+        event participation by 20%.
+      </li>
+      <li>
+        Optimized the platform’s interface, leveraging React’s state management
+        and virtual DOM features to achieve a 46% reduction in page load times.
+        This also led to a 20% decrease in member drop-offs during onboarding
+      </li>
+      <li>
+        Collaborated with 4 front-end developers to create 34 reusable React
+        components, which improved UI/UX design consistency by 35%.
+      </li>
+      <li>
+        Refactored the JavaScript-based codebase for the payment system,
+        enhancing its scalability and reducing transaction processing times by
+        25%.
+      </li>
     </ul>
-    return <>
-        <div className={classes['churchPad-detail']}>
-            {churchPad}
-            {churchPadDate}
-        </div>
-        {churchPadExperience}
+  );
+  return (
+    <>
+      <div className={classes["churchPad-detail"]}>
+        {churchPad}
+        {churchPadDate}
+      </div>
+      {churchPadExperience}
     </>
-}
+  );
+};
 
 export default ChurchPad;

@@ -1,8 +1,10 @@
 const SkillsItem = (props) => {
-    return <div>
-        <h3>{props.viewSkills}</h3>
-        <p>{props.details}</p>
+  return (
+    <div style={{ display: "flex", gap: "5px", width: "100%" }}>
+      <h3 style={{ width: "40%" }}>{props.viewSkills}:</h3>
+      <p style={{ width: "60%" }}>{props.details}</p>
     </div>
-}
+  );
+};
 
 export default SkillsItem;
